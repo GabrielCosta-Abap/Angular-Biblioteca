@@ -1,0 +1,37 @@
+<div class="container mt-2">
+    <h2>Formulário de Produtos</h2>
+    
+    <div class="mb-3">
+        <label for="nome" class="form-label">NOME:</label>
+        <input [(ngModel)]="produto.nome" 
+            class="form-control"
+            id="nome">
+    </div>
+
+    <div class="mb-3">
+        <label for="preco" class="form-label">PREÇO:</label>
+        <input type="number" [(ngModel)]="produto.preco" 
+            class="form-control"
+            id="preco">
+    </div>
+
+    <div class="mb-3">
+        <label for="marca" class="form-label">MARCA:</label>
+        <input [(ngModel)]="produto.marca" 
+            class="form-control"
+            id="marca">
+    </div>
+
+    <div class="mb-3">
+        <label for="validade" class="form-label">VALIDADE:</label>
+        <input type="date" [(ngModel)]="produto.dataValidade" 
+            class="form-control"
+            id="validade">
+    </div>
+    <button class="btn btn-primary me-3" (click)="salvar()">
+        {{botaoAcao}}
+    </button>
+    <button class="btn btn-primary" (click)="voltar()">
+        Voltar
+    </button>
+</div>
