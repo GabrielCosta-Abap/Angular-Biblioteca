@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TabelaProdutosComponent } from './tabela-produtos/tabela-produtos.component';
-import { FormProdutosComponent } from './form-produtos/form-produtos.component';
+import { TabelaLivrosComponent } from './tabela-livros/tabela-livros.component';
+import { FormLivrosComponent } from './form-livros/form-livros.component';
 import { FormsModule } from '@angular/forms';
 import { MoedaPipe } from './moeda.pipe';
 import { FiltroPesquisaPipe } from './filtro-pesquisa.pipe';
@@ -14,8 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
-    TabelaProdutosComponent,
-    FormProdutosComponent,
+    TabelaLivrosComponent,
+    FormLivrosComponent,
     MoedaPipe,
     FiltroPesquisaPipe,
     PageNotFoundComponent

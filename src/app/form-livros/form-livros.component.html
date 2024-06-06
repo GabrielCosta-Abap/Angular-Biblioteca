@@ -1,37 +1,37 @@
 <div class="container mt-2">
-    <h2>Formulário de Produtos</h2>
+    <h2 class="title-form-livros">Formulário de Livros</h2>
     
     <div class="mb-3">
         <label for="nome" class="form-label">NOME:</label>
-        <input [(ngModel)]="produto.nome" 
+        <input [(ngModel)]="livro.titulo" 
             class="form-control"
             id="nome">
     </div>
 
     <div class="mb-3">
         <label for="preco" class="form-label">PREÇO:</label>
-        <input type="number" [(ngModel)]="produto.preco" 
+        <input type="number" [(ngModel)]="livro.preco" 
             class="form-control"
             id="preco">
     </div>
 
     <div class="mb-3">
-        <label for="marca" class="form-label">MARCA:</label>
-        <input [(ngModel)]="produto.marca" 
+        <label for="marca" class="form-label">AUTOR:</label>
+        <input [(ngModel)]="livro.autor" 
             class="form-control"
             id="marca">
     </div>
 
     <div class="mb-3">
-        <label for="validade" class="form-label">VALIDADE:</label>
-        <input type="date" [(ngModel)]="produto.dataValidade" 
+        <label for="validade" class="form-label">DATA PUBLICAÇÃO:</label>
+        <input type="date" [(ngModel)]="livro.dataPublicacao" 
             class="form-control"
             id="validade">
     </div>
-    <button class="btn btn-primary me-3" (click)="salvar()">
+    <button class="btn btn-primary me-3 btn-cadastrar" (click)="salvar()">
         {{botaoAcao}}
     </button>
-    <button class="btn btn-primary" (click)="voltar()">
+    <button class="btn btn-primary btn-voltar" (click)="voltar()">
         Voltar
     </button>
 </div>

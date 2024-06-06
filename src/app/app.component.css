@@ -1,0 +1,50 @@
+body {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.text-center {
+    color: #fff;
+    margin-top: 3rem;
+}
+
+.navbar {
+    background-color: #333;
+    border-bottom: 1px solid #666;
+    padding-left: 15px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ccc;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.active:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.router-outlet {
+    padding: 20px;
+}
+
+.title-biblioteca{
+    background-color: grey;
+    color: #fff;
+    margin: 0 !important;
+    padding-left: 15px !important;
+}

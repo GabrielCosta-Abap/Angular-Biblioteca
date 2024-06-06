@@ -1,39 +1,25 @@
 {
-  "produtos": [
+  "livros": [
     {
-      "id": 1,
-      "nome": "Prod 1",
-      "preco": 120,
-      "marca": "marca 1",
-      "dataValidade": "2025-10-01"
+      "id": "902a",
+      "titulo": "reuri porte",
+      "preco": 12.5,
+      "autor": "J.K. Rowling",
+      "dataPublicacao": "1989-10-25"
     },
     {
-      "id": 2,
-      "nome": "Produto 2",
-      "preco": 210,
-      "marca": "marca 1",
-      "dataValidade": "2025-10-01"
+      "id": "6b9a",
+      "titulo": "Game of Thrones",
+      "preco": 49.9,
+      "autor": "Jorge R.R. Martin",
+      "dataPublicacao": "2001-05-30"
     },
     {
-      "id": 3,
-      "nome": "Produto 3",
-      "preco": 320,
-      "marca": "marca 2",
-      "dataValidade": "2025-10-01"
-    },
-    {
-      "nome": "Prod 4",
-      "preco": 400,
-      "marca": "marca 2",
-      "dataValidade": "2025-10-01",
-      "id": 4
-    },
-    {
-      "nome": "Produto 5",
-      "preco": 550,
-      "marca": "marca 3",
-      "dataValidade": "2025-05-20",
-      "id": 5
+      "id": "67c4",
+      "titulo": "O Pequeno Príncipe",
+      "preco": 59.92,
+      "autor": "Fulaninho",
+      "dataPublicacao": "2023-06-06"
     }
   ]
 }

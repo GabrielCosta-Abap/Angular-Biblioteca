@@ -1,15 +1,16 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Produto } from './produto';
+import { Livro } from './livro';
 
 @Pipe({
   name: 'filtroPesquisa',
   pure: false
 })
+
 export class FiltroPesquisaPipe implements PipeTransform {
 
-  transform(listaProdutos: Produto[], nomePesq: string): Produto [] {
-    return listaProdutos.filter ( (produto:Produto) => {
-      return produto.nome?.toLowerCase().includes(nomePesq.toLowerCase())
+  transform(listaLivros: Livro[], nomePesq: string): Livro [] {
+    return listaLivros.filter ( (livro:Livro) => {
+      return livro.titulo?.toLowerCase().includes(nomePesq.toLowerCase())
     })
   }
 }

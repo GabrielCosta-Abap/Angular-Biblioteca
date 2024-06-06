@@ -1,0 +1,38 @@
+<div class="container mt-2">
+    <h2>{{title}}</h2>
+
+    <div class="mb-3">
+        <label for="nome" class="form-label">Pesquisa:</label>
+        <input [(ngModel)]="nomePesquisado" 
+            class="form-control"
+            id="nome">
+    </div>
+
+    <p *ngIf="listaLivros.length == 0">
+        Livros não encontrados!
+    </p>
+    <table class="table table-striped" *ngIf="listaLivros.length > 0">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NOME</th>
+                <th>PRECO</th>
+                <th>AUTOR</th>
+                <th>DATA PUBLICAÇÃO</th>
+                <th>EDIÇÃO</th>
+                <th>ELIMINAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let livro of listaLivros | filtroPesquisa:nomePesquisado">
+                <td>{{livro.id}}</td>
+                <td>{{livro.titulo}}</td>
+                <td>{{livro.preco | moeda}}</td>
+                <td>{{livro.autor | uppercase}}</td>
+                <td>{{livro.dataPublicacao | date:'dd/MM/yyyy'}}</td>
+                <td><a class='btn btn-primary btn-edit' routerLink='/edit/{{livro.id}}' >Editar</a></td>
+                <td><a class='btn btn-primary btn-delete' routerLink='/tabela' (click)="deletar(livro.id)">Deletar</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

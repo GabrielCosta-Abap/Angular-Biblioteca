@@ -1,0 +1,59 @@
+.container {
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #fff;
+}
+
+.form-label {
+    color: #fff;
+}
+
+.form-control {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+.table {
+    background-color: #444;
+    color: #fff;
+}
+
+.table th,
+.table td {
+    border-color: #666;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #555;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #444;
+}
+
+.btn-edit{
+    border-color: white; 
+    background-color: blueviolet;
+}
+
+.btn-delete{
+    border-color: white; 
+    background-color: darkred !important;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
